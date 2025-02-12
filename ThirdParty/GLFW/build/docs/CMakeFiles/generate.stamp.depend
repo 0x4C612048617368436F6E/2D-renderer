@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/CMake/share/cmake-3.29/Modules/FindDoxygen.cmake
+C:/CMake/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake
+C:/CMake/share/cmake-3.29/Modules/FindPackageMessage.cmake
+C:/Users/benja/Desktop/2D Renderer/ThirdParty/GLFW/glfw-3.4/docs/CMakeLists.txt

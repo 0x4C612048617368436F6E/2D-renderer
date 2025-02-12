@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/benja/Desktop/2D Renderer/ThirdParty/GLFW/glfw-3.4/tests/CMakeLists.txt
+  msaa.c
+  getopt.c
+  Generating Code...
+  msaa.vcxproj -> C:\Users\benja\Desktop\2D Renderer\ThirdParty\GLFW\build\tests\Debug\msaa.exe

@@ -1,0 +1,10 @@
+^C:\USERS\BENJA\DESKTOP\2D RENDERER\THIRDPARTY\GLFW\GLFW-3.4\EXAMPLES\CMAKELISTS.TXT
+setlocal
+C:\CMake\bin\cmake.exe "-SC:/Users/benja/Desktop/2D Renderer/ThirdParty/GLFW/glfw-3.4" "-BC:/Users/benja/Desktop/2D Renderer/ThirdParty/GLFW/build" --check-stamp-file "C:/Users/benja/Desktop/2D Renderer/ThirdParty/GLFW/build/examples/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
