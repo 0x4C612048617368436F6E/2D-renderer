@@ -1,3 +1,2 @@
-﻿  glad.c
-  main.cpp
-  2D Renderer.vcxproj -> C:\Users\benja\Desktop\2D Renderer\2D Renderer\x64\Debug\2D Renderer.exe
+﻿  Window.cpp
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(8,75): error C4576: a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax
