@@ -1,4 +1,8 @@
 ﻿  Window.cpp
-C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(33,64): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(33,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(42,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(41,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(63,68): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(63,33): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(62,40): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(61,40): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
   2D Renderer.vcxproj -> C:\Users\benja\Desktop\2D Renderer\2D Renderer\x64\Debug\2D Renderer.exe
