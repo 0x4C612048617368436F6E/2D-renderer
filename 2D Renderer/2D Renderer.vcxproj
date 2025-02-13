@@ -134,11 +134,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\ThirdParty\GLAD\src\glad.c" />
+    <ClCompile Include="src\handleInput.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\common.hpp" />
+    <ClInclude Include="header\handleInput.hpp" />
     <ClInclude Include="header\logger.hpp" />
     <ClInclude Include="header\Window.hpp" />
   </ItemGroup>

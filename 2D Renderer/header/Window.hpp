@@ -1,5 +1,6 @@
 #pragma once
 #include"../header/common.hpp"
+#include"../header/handleInput.hpp"
 //class for our window
 class Window {
  private:
@@ -25,6 +26,5 @@ class Window {
   //others can access the window
   GLFWwindow* getCurrentWindow() { return window;}
   static void errorCallback(int code, const char* description);
-	 
   ~Window();
 };

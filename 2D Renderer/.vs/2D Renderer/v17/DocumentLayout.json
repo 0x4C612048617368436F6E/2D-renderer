@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\handleInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:src\\handleInput.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:src\\Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\handleInput.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:header\\handleInput.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\Window.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:header\\Window.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\common.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:header\\common.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\logger.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:header\\logger.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 682,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +55,97 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{68487888-204a-11d3-87eb-00c04f7971a5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "handleInput.cpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\handleInput.cpp",
+              "RelativeDocumentMoniker": "src\\handleInput.cpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\handleInput.cpp",
+              "RelativeToolTip": "src\\handleInput.cpp",
+              "ViewState": "AQIAAHwAAAAAAAAAAAAAAIAAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T17:03:38.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "handleInput.hpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\handleInput.hpp",
+              "RelativeDocumentMoniker": "header\\handleInput.hpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\handleInput.hpp",
+              "RelativeToolTip": "header\\handleInput.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-13T17:02:14.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window.cpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\Window.cpp",
+              "RelativeDocumentMoniker": "src\\Window.cpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\Window.cpp",
+              "RelativeToolTip": "src\\Window.cpp",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAIwEsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T16:21:52.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T16:21:51.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Window.hpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\Window.hpp",
+              "RelativeDocumentMoniker": "header\\Window.hpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\Window.hpp",
+              "RelativeToolTip": "header\\Window.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-13T16:21:49.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "logger.hpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\logger.hpp",
+              "RelativeDocumentMoniker": "header\\logger.hpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\logger.hpp",
+              "RelativeToolTip": "header\\logger.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-13T16:21:48.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "common.hpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\common.hpp",
+              "RelativeDocumentMoniker": "header\\common.hpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\common.hpp",
+              "RelativeToolTip": "header\\common.hpp",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-13T16:21:47.28Z",
+              "EditorCaption": ""
             }
           ]
         }

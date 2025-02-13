@@ -70,8 +70,10 @@ void Window::CreateWindow() {
     glClearColor(windowColor.RED, windowColor.GREEN, windowColor.BLUE,
                  windowColor.ALPHA);
     glClear(GL_COLOR_BUFFER_BIT);
-
-    glfwPollEvents();
+    handleInput userInput;
+    glfwSetKeyCallback(this->window, userInput.MiddlewareHandleInput);
+    // handle Inputs each frame here
+    glfwWaitEvents();
     glfwSwapBuffers(this->window);
   }
 }
