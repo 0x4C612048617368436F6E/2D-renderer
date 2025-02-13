@@ -1,2 +1,4 @@
 ﻿  Window.cpp
-C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(8,75): error C4576: a parenthesized type followed by an initializer list is a non-standard explicit type conversion syntax
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(33,64): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(33,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  2D Renderer.vcxproj -> C:\Users\benja\Desktop\2D Renderer\2D Renderer\x64\Debug\2D Renderer.exe

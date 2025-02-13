@@ -20,5 +20,6 @@ typedef struct defaultFrameBufferColorBit {
   float ALPHA = 0.0f;
 } FrameBufferBit;
 
-#define FrameBufferColorBitWhite(FrameBufferBit) {1.0f, 1.0f, 1.0f, 1.0f};
+#define DEFAULTWINDOWCONFIGURATION WC{0, 0}
+#define FrameBufferColorBitWhite FrameBufferBit{1.0f, 1.0f, 1.0f, 1.0f}
  

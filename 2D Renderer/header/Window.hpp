@@ -9,13 +9,13 @@ class Window {
   GLFWwindow* window = nullptr;
 
  public:
-  Window();
-  Window(size_t width, size_t height, std::string WindowTitle);
+  //Window();
+  Window(size_t width = 800, size_t height = 800,
+         std::string Title = "Hello world");
   //framebuffer is the area where output will be displayed
   void setFrameBufferColorBit();
   //others can access the window
   GLFWwindow* getCurrentWindow() { return window;}
-
   void errorCallback(int code, char* description) { 
 	  LOGERROR<std::string>(description);
   }
