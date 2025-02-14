@@ -6,6 +6,10 @@ extern "C" {
 #include<iostream>
 #include"logger.hpp"
 #include<string>
+#include<fstream>
+#include<vector>
+
+typedef unsigned int UIx64;
 
 typedef struct WindowConfigiration {
  public:
@@ -45,4 +49,8 @@ enum class INPUT : unsigned int {
   ARROW_RIGHT_BUTTON = GLFW_KEY_RIGHT,
   KEY_IS_PRESSED = GLFW_PRESS,
   KEY_IS_RELEASED = GLFW_RELEASE
+};
+enum class SHADERTYPE : int { 
+	VERTEX = 0x8B31,
+	FRAGMENT = 0x8B30
 };

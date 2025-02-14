@@ -134,15 +134,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\ThirdParty\GLAD\src\glad.c" />
+    <ClCompile Include="src\createShader.cpp" />
+    <ClCompile Include="src\createShaderProgram.cpp" />
     <ClCompile Include="src\handleInput.cpp" />
+    <ClCompile Include="src\loadShader.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\renderObject.cpp" />
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="header\common.hpp" />
+    <ClInclude Include="header\createShader.hpp" />
+    <ClInclude Include="header\createShaderProgram.hpp" />
     <ClInclude Include="header\handleInput.hpp" />
+    <ClInclude Include="header\loadShader.hpp" />
     <ClInclude Include="header\logger.hpp" />
+    <ClInclude Include="header\renderObject.hpp" />
     <ClInclude Include="header\Window.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\fragmentShader.frag" />
+    <None Include="resources\vertexShader.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
