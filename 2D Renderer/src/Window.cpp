@@ -60,9 +60,9 @@ void Window::CreateWindow() {
   LOGINFO<const GLubyte*>(glGetString(GL_VERSION));
   LOGINFO<const GLubyte*>(glGetString(GL_SHADING_LANGUAGE_VERSION));
   //configure viewport
-  glViewport(configureViewPortDimension.initialX,
-             configureViewPortDimension.initialY,
-      configureViewPortDimension.finalX, configureViewPortDimension.finalY);
+  LOGINFO<int>(configureViewPortDimension.finalY);
+  glViewport(configureViewPortDimension.initialX, configureViewPortDimension.initialY, configureViewPortDimension.finalX,configureViewPortDimension.finalY);  // configureViewPortDimension.initialX,configureViewPortDimension.initialY,configureViewPortDimension.finalX,
+                               // configureViewPortDimension.finalY);
   //configure callback to track winow
   //dimension
   glfwSetFramebufferSizeCallback(this->window,
@@ -86,7 +86,7 @@ void Window::setRenderDisplay(int initialX, int initialY, int width,
   configureViewPortDimension.initialX = initialX;
   configureViewPortDimension.initialY = initialY;
   configureViewPortDimension.finalX = width;
-  configureViewPortDimension.finalX = height;
+  configureViewPortDimension.finalY = height;
 }
 
 void Window::RenderDisplayResizeCallBack(GLFWwindow* window,int width, int height) {
