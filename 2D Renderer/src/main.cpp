@@ -2,11 +2,10 @@
 #include"../header/Window.hpp"
 int main() { 
 	Window mainWindow;
-  mainWindow.setWindowColor(0.0f,0.0f,0.0f,1.0f);
-  //try make sure values of setRenderDisplay is 
-  //same as CreateWindow or below that
-  mainWindow.setRenderDisplay(0,0,800,800);
+        mainWindow.setWindowColor();
+  mainWindow.setRenderDisplay();//default value is 0,0,800,800
   mainWindow.CreateWindow();
+  //specify size of triangle
   mainWindow.drawTriangle();
 	return 0;
 }

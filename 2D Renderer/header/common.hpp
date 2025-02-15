@@ -37,7 +37,7 @@ typedef struct defaultFrameBufferColorBit {
 #define DEFAULTWINDOWCONFIGURATION WC{800, 800}
 #define DEFAULTVIEWPORTCONFIGURATION VPC {0,0,800,800}
 #define FrameBufferColorBitWhite FrameBufferBit{1.0f, 1.0f, 1.0f, 1.0f}
- 
+
 enum class INPUT : unsigned int {
   EXIT_BUTTON = GLFW_KEY_ESCAPE,
   W_BUTTON = GLFW_KEY_W,
@@ -51,7 +51,10 @@ enum class INPUT : unsigned int {
   KEY_IS_PRESSED = GLFW_PRESS,
   KEY_IS_RELEASED = GLFW_RELEASE
 };
+
 enum class SHADERTYPE : GLenum { 
 	VERTEX = 0x8B31,
 	FRAGMENT = 0x8B30
 };
+
+void RenderDisplayResizeCallBack(GLFWwindow* window, int width, int height);

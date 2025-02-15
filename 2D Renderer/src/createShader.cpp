@@ -3,11 +3,7 @@
 //createShader::createShader(int shaderType,std::vector<std::string>shaderVector) :ShaderTypeParameter(shaderType) {
 createShader::createShader(GLenum shaderType, std::string shaderVector)
     : ShaderTypeParameter(shaderType), stringShaderSource(shaderVector) {
-    //convert vector to string
-  /* for (std::string value : shaderVector) {
-             stringShaderSource.append(value);
-          stringShaderSource += "\n";
-		}*/
+
 		
 }
  
@@ -16,35 +12,13 @@ std::string createShader::getStringShaderSource() {
 }
 
 UIx64 createShader::createShaderObject() {
-  /* size_t currentRange = 10;
-  char* tempStore = (char *)malloc(currentRange*sizeof(char));
-  if (!tempStore) {
-    LOGERROR<std::string>("Unable to allocate memory");
-    exit(EXIT_FAILURE);
-  }
-  //= getStringShaderSource().c_str();
-  //tempStore[strlen(tempStore)] = '/0';
-  size_t pointer = 0;
-  for (int i = 0; i < getStringShaderSource().size(); i++) {
-    if (pointer >= currentRange-1) {
-      currentRange *= 2;
-      tempStore = (char*)realloc(tempStore,currentRange * sizeof(char));
-      if (!tempStore) {
-        LOGERROR<std::string>("Unable to allocate memory");
-        exit(EXIT_FAILURE);
-      }
-    } else {
-      tempStore[pointer++] = getStringShaderSource()[i];
-    }
-  }
-  tempStore[pointer] = '\0';*/
-  //std::string shaderSource = getStringShaderSource();  // Store the shader source safely
-  const char* tempStore = stringShaderSource.c_str();  // shaderSource.c_str();  // Get pointer to C-string
 
-  GLenum shaderType = (ShaderTypeParameter == GL_VERTEX_SHADER)
-                          ? GL_VERTEX_SHADER
-                          : GL_FRAGMENT_SHADER;
-
+  std::string shaderSource = getStringShaderSource();  // Store the shader source safely
+  const char* tempStore = shaderSource.c_str();
+  GLenum shaderType =
+      ((ShaderTypeParameter == static_cast<GLenum>(SHADERTYPE::VERTEX))
+           ? static_cast<GLenum>(SHADERTYPE::VERTEX)
+           : static_cast<GLenum>(SHADERTYPE::FRAGMENT));
   shaderObject = glCreateShader(shaderType);
   glShaderSource(shaderObject, 1, &tempStore, NULL);
   glCompileShader(shaderObject);
@@ -62,11 +36,10 @@ UIx64 createShader::createShaderObject() {
     ErrorValue.append(errorInfo);
 
     LOGERROR<std::string>(ErrorValue);
-    std::cerr << "ERROR::SHADER::COMPILATION_FAILED\n"
-              << errorInfo << std::endl;
+    std::cerr << "ERROR::SHADER::COMPILATION_FAILED\n"<< ErrorValue << std::endl;
 
-    // Print shader source for debugging
-    //std::cerr << "Shader Source:\n" << shaderSource << std::endl;
+    //Print shader source for debugging
+    std::cerr << "Shader Source:\n" << stringShaderSource << std::endl;
 
     exit(EXIT_FAILURE);
   }

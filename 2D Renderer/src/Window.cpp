@@ -60,14 +60,15 @@ void Window::CreateWindow() {
   LOGINFO<const GLubyte*>(glGetString(GL_VERSION));
   LOGINFO<const GLubyte*>(glGetString(GL_SHADING_LANGUAGE_VERSION));
   //configure viewport
-  LOGINFO<int>(configureViewPortDimension.finalY);
-  glViewport(configureViewPortDimension.initialX, configureViewPortDimension.initialY, configureViewPortDimension.finalX,configureViewPortDimension.finalY);  // configureViewPortDimension.initialX,configureViewPortDimension.initialY,configureViewPortDimension.finalX,
+  glViewport(
+      Window::configureViewPortDimension.initialX,
+      Window::configureViewPortDimension.initialY,
+      Window::configureViewPortDimension.finalX,
+      Window::configureViewPortDimension.finalY);  // configureViewPortDimension.initialX,configureViewPortDimension.initialY,configureViewPortDimension.finalX,
                                // configureViewPortDimension.finalY);
   //configure callback to track winow
   //dimension
-  glfwSetFramebufferSizeCallback(this->window,
-                                 Window::RenderDisplayResizeCallBack);
-  //drawTriangle();
+  glfwSetFramebufferSizeCallback(this->window,RenderDisplayResizeCallBack);
 
 }
 
@@ -83,17 +84,18 @@ void Window::setWindowColor(float RED, float GREEN,
 
 void Window::setRenderDisplay(int initialX, int initialY, int width,
     int height) {
-  configureViewPortDimension.initialX = initialX;
-  configureViewPortDimension.initialY = initialY;
-  configureViewPortDimension.finalX = width;
-  configureViewPortDimension.finalY = height;
+  Window::configureViewPortDimension.initialX = initialX;
+  Window::configureViewPortDimension.initialY = initialY;
+  Window::configureViewPortDimension.finalX = width;
+  Window::configureViewPortDimension.finalY = height;
 }
 
-void Window::RenderDisplayResizeCallBack(GLFWwindow* window,int width, int height) {
+void RenderDisplayResizeCallBack(GLFWwindow* window,int width, int height) {
   std::string res;
   res.reserve(20);
   res = "Width: " + std::to_string(width) + " Height: " + std::to_string(height);
-  
+  //reset values
+  glViewport(0,0,width,height);
   LOGINFO<std::string>(res);
 }
 
@@ -101,7 +103,7 @@ void Window::errorCallback(int code, const char* description) {
   LOGERROR<std::string>(description);
 }
 
-void Window::drawTriangle() {
+void Window::drawTriangle(float size) {
   renderObject triangle;
   createShaderProgram shaderProgram;
   glUseProgram(shaderProgram.shaderProgram());

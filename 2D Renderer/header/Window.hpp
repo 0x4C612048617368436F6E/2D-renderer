@@ -19,15 +19,13 @@ class Window {
   Window(size_t width = 800, size_t height = 800,
          std::string Title = "Hello world");
   //framebuffer is the area where output will be displayed
-  void setWindowColor(float RED = 1.0f, float GREEN = 0.0f, float BLUE = 0.0f,
+  void setWindowColor(float RED = 1.0f, float GREEN = 1.0f, float BLUE = 1.0f,
                       float ALPHA = 1.0f);
-  void setRenderDisplay(int initialX, int initialY,int width, int height);
-  static void RenderDisplayResizeCallBack(GLFWwindow* window, int width,
-                                          int height);
+  void setRenderDisplay(int initialX=0, int initialY=0,int width=800, int height=800);
   void CreateWindow();
   //others can access the window
   GLFWwindow* getCurrentWindow() { return window;}
   static void errorCallback(int code, const char* description);
-  void drawTriangle();
+  void drawTriangle(float size=0);
   ~Window();
 };

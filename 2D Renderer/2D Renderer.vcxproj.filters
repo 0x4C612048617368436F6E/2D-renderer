@@ -67,7 +67,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="resources\vertexShader.vert" />
-    <None Include="resources\fragmentShader.frag" />
+    <None Include="resources\vertexShader.glsl" />
+    <None Include="resources\fragmentShader.glsl" />
   </ItemGroup>
 </Project>
