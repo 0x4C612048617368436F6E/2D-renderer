@@ -3,12 +3,15 @@
 class createShader {
  private:
   std::string stringShaderSource;
-  UIx64 createShaderObject();
- public:
-  createShader(int shaderTtype,std::vector<std::string> shaderVector);
-
- public:
-  UIx64 createShaderObject();
+  // create shader objects
+  UIx64 shaderObject;
   std::string getStringShaderSource();
+  GLenum ShaderTypeParameter;
+ public:
+  //createShader(int shaderType,std::vector<std::string> shaderVector);
+  createShader(GLenum shaderType, std::string shaderVector);
+
+  UIx64 createShaderObject();
+  void deleteShaderObject();
   ~createShader();
 };

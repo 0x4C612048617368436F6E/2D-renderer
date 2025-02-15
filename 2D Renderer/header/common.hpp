@@ -8,6 +8,7 @@ extern "C" {
 #include<string>
 #include<fstream>
 #include<vector>
+#include<sstream>
 
 typedef unsigned int UIx64;
 
@@ -50,7 +51,7 @@ enum class INPUT : unsigned int {
   KEY_IS_PRESSED = GLFW_PRESS,
   KEY_IS_RELEASED = GLFW_RELEASE
 };
-enum class SHADERTYPE : int { 
+enum class SHADERTYPE : GLenum { 
 	VERTEX = 0x8B31,
 	FRAGMENT = 0x8B30
 };

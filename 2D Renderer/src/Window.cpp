@@ -22,7 +22,7 @@ void Window::CreateWindow() {
   }
 
   glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
-  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
   glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
   // initialise glfw
@@ -57,6 +57,8 @@ void Window::CreateWindow() {
     exit(EXIT_FAILURE);
   }
   LOGINFO<std::string>("Loaded OpenGL function symbols");
+  LOGINFO<const GLubyte*>(glGetString(GL_VERSION));
+  LOGINFO<const GLubyte*>(glGetString(GL_SHADING_LANGUAGE_VERSION));
   //configure viewport
   glViewport(configureViewPortDimension.initialX,
              configureViewPortDimension.initialY,
@@ -65,17 +67,8 @@ void Window::CreateWindow() {
   //dimension
   glfwSetFramebufferSizeCallback(this->window,
                                  Window::RenderDisplayResizeCallBack);
-  //loop to keep window running
-  while (!glfwWindowShouldClose(this->window)) {
-    glClearColor(windowColor.RED, windowColor.GREEN, windowColor.BLUE,
-                 windowColor.ALPHA);
-    glClear(GL_COLOR_BUFFER_BIT);
-    handleInput userInput;
-    glfwSetKeyCallback(this->window, userInput.MiddlewareHandleInput);
-    // handle Inputs each frame here
-    glfwWaitEvents();
-    glfwSwapBuffers(this->window);
-  }
+  //drawTriangle();
+
 }
 
 void Window::setWindowColor(float RED, float GREEN,
@@ -106,6 +99,29 @@ void Window::RenderDisplayResizeCallBack(GLFWwindow* window,int width, int heigh
 
 void Window::errorCallback(int code, const char* description) {
   LOGERROR<std::string>(description);
+}
+
+void Window::drawTriangle() {
+  renderObject triangle;
+  createShaderProgram shaderProgram;
+  glUseProgram(shaderProgram.shaderProgram());
+  triangle.drawTraingle(0, 0, 800, 800);
+  // instantiate renderObject here
+  while (!glfwWindowShouldClose(this->window)) {
+    glClearColor(windowColor.RED, windowColor.GREEN, windowColor.BLUE,
+                 windowColor.ALPHA);
+    glClear(GL_COLOR_BUFFER_BIT);
+    // draw objects here
+    // loop to keep window running
+    triangle.activateTriagleVAO();
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    handleInput userInput;
+    glfwSetKeyCallback(this->window, userInput.MiddlewareHandleInput);
+    // handle Inputs each frame here
+    glfwWaitEvents();
+    glfwSwapBuffers(this->window);
+  }
+
 }
 
 Window::~Window() { 
