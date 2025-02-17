@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\Window.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:header\\Window.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:src\\Window.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\resources\\fragmentShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:resources\\fragmentShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\resources\\vertexShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:resources\\vertexShader.glsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\renderObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6A461E85-4470-4ECD-8784-CDD6CA767D4D}|2D Renderer.vcxproj|solutionrelative:src\\renderObject.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +34,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 682,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "fragmentShader.glsl",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\resources\\fragmentShader.glsl",
+              "RelativeDocumentMoniker": "resources\\fragmentShader.glsl",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\resources\\fragmentShader.glsl",
+              "RelativeToolTip": "resources\\fragmentShader.glsl",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-17T03:27:55.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "vertexShader.glsl",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\resources\\vertexShader.glsl",
+              "RelativeDocumentMoniker": "resources\\vertexShader.glsl",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\resources\\vertexShader.glsl",
+              "RelativeToolTip": "resources\\vertexShader.glsl",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-02-17T03:27:54.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "renderObject.cpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\renderObject.cpp",
+              "RelativeDocumentMoniker": "src\\renderObject.cpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\renderObject.cpp",
+              "RelativeToolTip": "src\\renderObject.cpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T03:27:45.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Window.cpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\Window.cpp",
+              "RelativeDocumentMoniker": "src\\Window.cpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\Window.cpp",
+              "RelativeToolTip": "src\\Window.cpp",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAIYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T03:13:26.189Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -26,6 +103,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{68487888-204a-11d3-87eb-00c04f7971a5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window.hpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\Window.hpp",
+              "RelativeDocumentMoniker": "header\\Window.hpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\header\\Window.hpp",
+              "RelativeToolTip": "header\\Window.hpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-17T03:13:32.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\main.cpp",
+              "RelativeDocumentMoniker": "src\\main.cpp",
+              "ToolTip": "C:\\Users\\benja\\Desktop\\2D Renderer\\2D Renderer\\src\\main.cpp",
+              "RelativeToolTip": "src\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-17T03:12:49.127Z",
+              "EditorCaption": ""
             }
           ]
         }

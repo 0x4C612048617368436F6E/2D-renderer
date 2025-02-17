@@ -7,5 +7,7 @@ int main() {
   mainWindow.CreateWindow();
   //specify size of triangle
   mainWindow.drawTriangle();
+  mainWindow.triangleSize();
+  mainWindow.loadTexture("Testing");
 	return 0;
 }

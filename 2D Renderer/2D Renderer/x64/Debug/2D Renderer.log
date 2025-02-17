@@ -1,2 +1,10 @@
-﻿  createShader.cpp
+﻿  Window.cpp
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(42,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(41,59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(67,41): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(66,41): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(65,41): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+C:\Users\benja\Desktop\2D Renderer\2D Renderer\src\Window.cpp(64,41): warning C4267: 'argument': conversion from 'size_t' to 'GLint', possible loss of data
+  main.cpp
+  Generating Code...
   2D Renderer.vcxproj -> C:\Users\benja\Desktop\2D Renderer\2D Renderer\x64\Debug\2D Renderer.exe

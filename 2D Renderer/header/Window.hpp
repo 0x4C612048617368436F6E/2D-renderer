@@ -14,6 +14,8 @@ class Window {
   WC configureWindowDimension; //WC = Window dimension
   VPC configureViewPortDimension; //VPC = ViewPort Dimension
 
+  float shapeSize = 1.0f;
+
  public:
   //Window();
   Window(size_t width = 800, size_t height = 800,
@@ -27,5 +29,7 @@ class Window {
   GLFWwindow* getCurrentWindow() { return window;}
   static void errorCallback(int code, const char* description);
   void drawTriangle(float size=0);
+  void triangleSize(float size = 1.0f);
+  void loadTexture(std::string path);
   ~Window();
 };

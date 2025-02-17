@@ -113,7 +113,8 @@ void Window::drawTriangle(float size) {
     glClearColor(windowColor.RED, windowColor.GREEN, windowColor.BLUE,
                  windowColor.ALPHA);
     glClear(GL_COLOR_BUFFER_BIT);
-    // draw objects here
+    //find the location where the scale value will be
+    UIx64 shaderLocation;
     // loop to keep window running
     triangle.activateTriagleVAO();
     glDrawArrays(GL_TRIANGLES, 0, 3);
@@ -123,6 +124,14 @@ void Window::drawTriangle(float size) {
     glfwWaitEvents();
     glfwSwapBuffers(this->window);
   }
+
+}
+
+void Window::triangleSize(float size) {
+  shapeSize = size; //find way to send this off
+}
+
+void loadTexture(std::string path) {
 
 }
 
